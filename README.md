@@ -9,7 +9,7 @@ Each node in the graph has its uniqe key and tag. The tag used for helping the g
 This class implements several algorithms on weighted undirected graph such as finding the shortest path from one node to another, 
 get the shortest distance between two nodes.checking if the graph connected (means that all nodes are reachable from each node).
 Class contains deepcopy methods that create a deep-copied graph.  
-#### ShortestPath - Dijkstra
+### ShortestPath - Dijkstra
 The algorithm that used for finding the shortest path between two nodes is Dijkstra.
 The algorithm using priority queue for prioritize the nodes and giving the shortestPath.<br/>
 references used for the implementation and for more information : https://www.coursera.org/lecture/advanced-data-structures/core-dijkstras-algorithm-2ctyF
