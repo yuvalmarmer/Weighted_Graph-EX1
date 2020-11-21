@@ -16,17 +16,17 @@ references used for the implementation and for more information : https://www.co
 ### Save / Load
 Save method uses Gson library for saving the graph in json format to file.<br/>
 Json Format
-``` json
-{
-    "Vertices" : [{
-        "key" : tag
-    }],
-    "Edges" :  {
-        "key_node1" : {
-            "key_node2" : weight
-        }
-     }
-}
+```json
+    {
+        "Vertices" : [{
+            "key" : "tag"
+        }],
+        "Edges" :  {
+            "key_node1" : {
+                "key_node2" : "weight"
+            }
+         }
+    }
 ```
 The load function also using Gson for parsing the json file and building a weighted graph.
 
@@ -42,17 +42,17 @@ Uses Junit 5 for testes functions. You can look up for examples there.
 ## Example
 Simple use of this WGraph_DS and WGraph_Algo  
 ``` java
-        //Creating new graph
-        WGraph_DS graph = new WGraph_DS();
-        //Adding two nodes into the graph
-        graph.addNode(0);
-        graph.addNode(1);
-        //Connect the with weight edges size 10
-        graph.connect(0,1,10);
-        //Creating new GraphAlog
-        weighted_graph_algorithms graph_algo = new WGraph_Algo();
-        //Initialize the graph into graph_algo
-        graph_algo.init(graph); 
-        //Check if graph connected
-        System.out.println(graph_algo.isConnected());
+    //Creating new graph
+    WGraph_DS graph = new WGraph_DS();
+    //Adding two nodes into the graph
+    graph.addNode(0);
+    graph.addNode(1);
+    //Connect the with weight edges size 10
+    graph.connect(0,1,10);
+    //Creating new GraphAlog
+    weighted_graph_algorithms graph_algo = new WGraph_Algo();
+    //Initialize the graph into graph_algo
+    graph_algo.init(graph); 
+    //Check if graph connected
+    System.out.println(graph_algo.isConnected());
 ```
